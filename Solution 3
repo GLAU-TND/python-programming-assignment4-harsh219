@@ -1,0 +1,10 @@
+#Problem 3
+
+t=['dog','deer','dear']
+pre='de'
+p=[]
+for i in t:
+  x=i.startswith(pre)
+  if x==True:
+    p.append(i)
+print(p)

@@ -1,0 +1,16 @@
+#Prolem 2
+
+m=eval(input())
+def new(n):
+  try:
+    for i in n:
+      if type(n[i])==type({}):
+        for j in n[i]:
+          n[i+j]=n[i][j]
+        n.pop(i)
+        new(n)
+    else:
+      print(n)
+  except RuntimeError:
+    pass
+new(m)
